@@ -1,4 +1,4 @@
-package org.herring.nifi.processors.enums;
+package org.herring.nifi.sqoop.enums;
 
 public enum SqoopLoadStrategy {
     FULL_LOAD,

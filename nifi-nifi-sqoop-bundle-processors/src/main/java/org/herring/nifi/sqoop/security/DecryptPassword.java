@@ -1,4 +1,4 @@
-package org.herring.nifi.processors.security;
+package org.herring.nifi.sqoop.security;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

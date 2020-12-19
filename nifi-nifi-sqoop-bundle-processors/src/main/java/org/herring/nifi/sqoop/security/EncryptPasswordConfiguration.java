@@ -1,4 +1,4 @@
-package org.herring.nifi.processors.security;
+package org.herring.nifi.sqoop.security;
 
 /**
  * Configuration for encrypting/decrypting password for use with sqoop

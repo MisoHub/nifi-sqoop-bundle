@@ -1,9 +1,9 @@
-package org.herring.nifi.processors;
+package org.herring.nifi.sqoop;
 
 import org.apache.nifi.annotation.documentation.CapabilityDescription;
 import org.apache.nifi.annotation.documentation.Tags;
 import org.apache.nifi.controller.ControllerService;
-import org.herring.nifi.processors.enums.PasswordMode;
+import org.herring.nifi.sqoop.enums.PasswordMode;
 
 /**
  * Interface for a connection provider service for Sqoop<br>

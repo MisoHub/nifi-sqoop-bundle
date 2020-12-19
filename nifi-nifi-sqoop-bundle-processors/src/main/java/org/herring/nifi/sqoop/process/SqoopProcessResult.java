@@ -1,4 +1,4 @@
-package org.herring.nifi.sqoop;
+package org.herring.nifi.sqoop.process;
 
 /**
  * Class to store the result of sqoop command execution

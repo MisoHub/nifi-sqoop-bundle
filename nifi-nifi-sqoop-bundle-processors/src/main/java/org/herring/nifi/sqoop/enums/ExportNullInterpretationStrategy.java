@@ -1,4 +1,4 @@
-package org.herring.nifi.processors.enums;
+package org.herring.nifi.sqoop.enums;
 
 /**
  * List of supported strategies for interpreting null values in HDFS data for sqoop export

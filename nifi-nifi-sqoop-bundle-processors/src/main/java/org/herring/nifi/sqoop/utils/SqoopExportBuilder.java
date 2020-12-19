@@ -1,4 +1,4 @@
-package org.herring.nifi.sqoop;
+package org.herring.nifi.sqoop.utils;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.nifi.logging.ComponentLog;

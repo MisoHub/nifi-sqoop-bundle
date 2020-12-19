@@ -1,4 +1,4 @@
-package org.herring.nifi.sqoop;
+package org.herring.nifi.sqoop.utils;
 
 import org.apache.nifi.logging.ComponentLog;
 import org.herring.nifi.sqoop.process.SqoopProcessResult;

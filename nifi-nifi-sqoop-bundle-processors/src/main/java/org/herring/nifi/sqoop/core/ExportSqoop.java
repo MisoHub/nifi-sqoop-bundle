@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.herring.nifi.processors.core;
+package org.herring.nifi.sqoop.core;
 
 
 import org.apache.nifi.annotation.behavior.WritesAttribute;
@@ -35,15 +35,19 @@ import org.apache.nifi.processor.exception.ProcessException;
 import org.apache.nifi.processor.util.StandardValidators;
 import org.apache.nifi.util.StopWatch;
 import org.apache.nifi.processor.AbstractProcessor;
-import org.herring.nifi.processors.*;
-import org.herring.nifi.processors.enums.ExportNullInterpretationStrategy;
+import org.herring.nifi.sqoop.*;
+import org.herring.nifi.sqoop.enums.ExportNullInterpretationStrategy;
 
 import java.io.File;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.nifi.hadoop.KerberosProperties;
-import org.herring.nifi.processors.security.KerberosConfig;
+import org.herring.nifi.sqoop.process.SqoopExportProcessRunner;
+import org.herring.nifi.sqoop.process.SqoopProcessResult;
+import org.herring.nifi.sqoop.security.KerberosConfig;
+import org.herring.nifi.sqoop.utils.SqoopExportBuilder;
+import org.herring.nifi.sqoop.utils.SqoopUtils;
 
 
 @Tags({"export", "sqoop", "rdbms", "database", "table"})

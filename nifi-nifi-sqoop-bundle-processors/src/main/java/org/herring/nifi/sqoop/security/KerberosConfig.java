@@ -1,4 +1,4 @@
-package org.herring.nifi.processors.security;
+package org.herring.nifi.sqoop.security;
 
 import org.apache.nifi.logging.ComponentLog;
 

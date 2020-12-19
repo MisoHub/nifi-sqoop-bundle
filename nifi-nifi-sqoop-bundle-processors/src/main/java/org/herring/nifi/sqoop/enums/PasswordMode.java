@@ -1,4 +1,4 @@
-package org.herring.nifi.processors.enums;
+package org.herring.nifi.sqoop.enums;
 
 public enum PasswordMode {
     CLEAR_TEXT_ENTRY,

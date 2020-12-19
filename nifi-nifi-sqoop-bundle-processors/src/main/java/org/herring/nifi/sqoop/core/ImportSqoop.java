@@ -1,4 +1,4 @@
-package org.herring.nifi.processors.core;
+package org.herring.nifi.sqoop.core;
 
 import org.apache.nifi.annotation.behavior.WritesAttribute;
 import org.apache.nifi.annotation.behavior.WritesAttributes;
@@ -15,9 +15,13 @@ import org.apache.nifi.processor.*;
 import org.apache.nifi.processor.exception.ProcessException;
 import org.apache.nifi.processor.util.StandardValidators;
 import org.apache.nifi.util.StopWatch;
-import org.herring.nifi.processors.*;
-import org.herring.nifi.processors.enums.*;
-import org.herring.nifi.processors.security.KerberosConfig;
+import org.herring.nifi.sqoop.*;
+import org.herring.nifi.sqoop.enums.*;
+import org.herring.nifi.sqoop.process.SqoopProcessResult;
+import org.herring.nifi.sqoop.process.SqoopProcessRunner;
+import org.herring.nifi.sqoop.security.KerberosConfig;
+import org.herring.nifi.sqoop.utils.SqoopBuilder;
+import org.herring.nifi.sqoop.utils.SqoopUtils;
 
 import java.io.File;
 import java.util.ArrayList;

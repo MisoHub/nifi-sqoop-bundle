@@ -61,16 +61,15 @@ import org.herring.nifi.sqoop.utils.SqoopUtils;
 })
 
 public class ExportSqoop extends AbstractProcessor {
-    
+
     /**
      * Property to provide connection service for executing sqoop jobs.
      */
-    public static final PropertyDescriptor SQOOP_CONNECTION_SERVICE  = new PropertyDescriptor
-            .Builder().name("MY_PROPERTY")
-            .displayName("My property")
-            .description("Example Property")
+    public static final PropertyDescriptor SQOOP_CONNECTION_SERVICE = new PropertyDescriptor.Builder()
+            .name("Sqoop Connection Service")
+            .description("Connection service for executing sqoop jobs.")
             .required(true)
-            .addValidator(StandardValidators.NON_EMPTY_VALIDATOR)
+            .identifiesControllerService(SqoopConnectionService.class)
             .build();
 
     /**
